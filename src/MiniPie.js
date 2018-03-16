@@ -19,6 +19,8 @@ export default class MiniPie extends React.Component {
     let width = svg.attr("width") - margin.left - margin.right;
     let height = svg.attr("height") - margin.top - margin.bottom;
 
+    svg.selectAll("*").remove();
+
     // text in legend
     svg
       .selectAll(".text-legend")
